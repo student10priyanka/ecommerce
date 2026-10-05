@@ -6,11 +6,12 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import lombok.Data;
 
+import java.io.Serializable;
 
-@Entity
 @Data
-public class Product {
-
+@Entity
+public class Product implements Serializable {
+    private static final long serialVersionUID = 1L;
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

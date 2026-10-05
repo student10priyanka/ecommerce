@@ -17,7 +17,7 @@ import java.util.Map;
 public class KafkaConfig {
 
     @Bean
-    public ProducerFactory<String, OrderCreatedEvent> producerFactory() {
+    public ProducerFactory<String, OrderCreatedEvent> producerFactory() {//producer with key , message
 
         Map<String, Object> config = new HashMap<>();
 
